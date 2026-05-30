@@ -1,0 +1,14 @@
+# Exclude the PDF resume
+final_danish_resume.pdf
+
+# Exclude local environment files
+.env
+.env.*
+!*.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Exclude dependencies and builds
+**/node_modules/
+**/dist/
