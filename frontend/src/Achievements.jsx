@@ -10,7 +10,8 @@ export default function Achievements() {
       date: '2026',
       description: 'Selected as a finalist for developing the CyberTech Cyber Awareness Platform focused on cybersecurity awareness and interactive learning. This recognition highlights innovation in educational technology and cybersecurity.',
       category: 'Competition',
-      icon: <Trophy className="w-6 h-6 text-amber-400" />
+      icon: <Trophy className="w-6 h-6 text-amber-400" />,
+      link: import.meta.env.VITE_CERTIFICATE_DRIVE_URL || 'https://drive.google.com/drive/folders/1Vhcf_nMASMSWnXK8CJbgliYNCcLxYHsG?usp=drive_link'
     },
     {
       id: 2,
@@ -20,7 +21,7 @@ export default function Achievements() {
       description: 'Completed the comprehensive introduction course to Model Context Protocol (MCP) by Anthropic, demonstrating knowledge of modern AI integration patterns and practices.',
       category: 'Certification',
       icon: <Award className="w-6 h-6 text-brandPurple" />,
-      link: 'https://drive.google.com'
+      link: import.meta.env.VITE_CERTIFICATE_DRIVE_URL || 'https://drive.google.com/drive/folders/1Vhcf_nMASMSWnXK8CJbgliYNCcLxYHsG?usp=drive_link'
     },
     {
       id: 3,

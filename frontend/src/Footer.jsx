@@ -36,10 +36,10 @@ export default function Footer() {
           <div className="md:col-span-3 space-y-4">
             <h4 className="text-white text-xs font-semibold uppercase tracking-wider">Social Channels</h4>
             <div className="flex flex-col space-y-2 text-sm">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href={import.meta.env.VITE_GITHUB_URL || 'https://github.com/Danish-git123'} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 GitHub
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href={import.meta.env.VITE_LINKEDIN_URL || 'https://www.linkedin.com/in/danish-bagwan-a047362b0/'} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 LinkedIn
               </a>
               <a href="mailto:danishbagwan88@gmail.com" className="text-gray-400 hover:text-white transition-colors">

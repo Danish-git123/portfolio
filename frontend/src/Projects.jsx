@@ -15,8 +15,8 @@ export default function Projects() {
         'Real-time SMS notifications via Twilio Integration',
         'Digital prescription templates and records storage'
       ],
-      githubLink: 'https://github.com',
-      demoLink: 'https://demo.example.com',
+      githubLink: import.meta.env.VITE_GITHUB_URL || 'https://github.com/Danish-git123',
+      demoLink: import.meta.env.VITE_CLINIC_MANAGER_DEMO_URL || 'https://creative-semolina-87d972.netlify.app/',
       mockupType: 'clinic'
     },
     {
@@ -31,8 +31,8 @@ export default function Projects() {
         'Integrated with WhatsApp Web and news feeds',
         'Lightweight, non-intrusive extension popup UI'
       ],
-      githubLink: 'https://github.com',
-      demoLink: 'https://demo.example.com',
+      githubLink: import.meta.env.VITE_GITHUB_URL || 'https://github.com/Danish-git123',
+      demoLink: import.meta.env.VITE_FACT_CHECKER_DEMO_URL || 'https://drive.google.com/drive/folders/1Vhcf_nMASMSWnXK8CJbgliYNCcLxYHsG?usp=drive_link',
       mockupType: 'factcheck'
     },
     {
@@ -47,8 +47,8 @@ export default function Projects() {
         'Collaborative system engineered by a 4-member team',
         'Dynamic dashboard visualizing security statistics'
       ],
-      githubLink: 'https://github.com',
-      demoLink: 'https://demo.example.com',
+      githubLink: import.meta.env.VITE_CYBERTECH_GITHUB_URL || 'https://github.com/Samarthk2117/angadi',
+      demoLink: null,
       mockupType: 'cyber'
     }
   ];
@@ -252,15 +252,17 @@ export default function Projects() {
                       <span>Source Code</span>
                     </a>
                     
-                    <a
-                      href={project.demoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-5 py-2.5 bg-gradient-to-r from-brandPink to-brandPurple hover:opacity-90 text-white text-xs font-semibold rounded-lg transition-all flex items-center gap-2 active:scale-95 shadow-md shadow-brandPink/20"
-                    >
-                      <ExternalLink className="w-4.5 h-4.5" />
-                      <span>Live Showcase</span>
-                    </a>
+                    {project.demoLink && (
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-5 py-2.5 bg-gradient-to-r from-brandPink to-brandPurple hover:opacity-90 text-white text-xs font-semibold rounded-lg transition-all flex items-center gap-2 active:scale-95 shadow-md shadow-brandPink/20"
+                      >
+                        <ExternalLink className="w-4.5 h-4.5" />
+                        <span>Live Showcase</span>
+                      </a>
+                    )}
                   </div>
 
                 </div>

@@ -142,22 +142,22 @@ export default function Contact() {
               <h4 className="text-xs font-semibold text-white uppercase tracking-wider mb-2">Find me on channels:</h4>
               <div className="grid grid-cols-2 gap-3">
                 <a
-                  href="https://github.com"
+                  href={import.meta.env.VITE_GITHUB_URL || 'https://github.com/Danish-git123'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gradient-border-card p-4 flex items-center justify-center gap-2 text-gray-400 hover:text-white transition-all text-xs font-semibold hover:shadow-[0_0_15px_rgba(255,45,138,0.1)]"
                 >
-                  <Github className="w-4 h-4 text-brandPink" />
+                  <Github className="w-4.5 h-4.5 text-brandPink" />
                   <span>GitHub</span>
                 </a>
                 
                 <a
-                  href="https://linkedin.com"
+                  href={import.meta.env.VITE_LINKEDIN_URL || 'https://www.linkedin.com/in/danish-bagwan-a047362b0/'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gradient-border-card p-4 flex items-center justify-center gap-2 text-gray-400 hover:text-white transition-all text-xs font-semibold hover:shadow-[0_0_15px_rgba(159,50,255,0.1)]"
                 >
-                  <Linkedin className="w-4 h-4 text-brandPurple" />
+                  <Linkedin className="w-4.5 h-4.5 text-brandPurple" />
                   <span>LinkedIn</span>
                 </a>
               </div>

@@ -12,3 +12,6 @@ final_danish_resume.pdf
 # Exclude dependencies and builds
 **/node_modules/
 **/dist/
+
+# Exclude temp instruction files
+links.txt
