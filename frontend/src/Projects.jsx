@@ -15,7 +15,7 @@ export default function Projects() {
         'Real-time SMS notifications via Twilio Integration',
         'Digital prescription templates and records storage'
       ],
-      githubLink: import.meta.env.VITE_GITHUB_URL || 'https://github.com/Danish-git123',
+      githubLink: import.meta.env.VITE_CLINIC_MANAGER_GITHUB_URL || 'https://github.com/Danish-git123/PROJECT-III',
       demoLink: import.meta.env.VITE_CLINIC_MANAGER_DEMO_URL || 'https://creative-semolina-87d972.netlify.app/',
       mockupType: 'clinic'
     },
@@ -31,7 +31,7 @@ export default function Projects() {
         'Integrated with WhatsApp Web and news feeds',
         'Lightweight, non-intrusive extension popup UI'
       ],
-      githubLink: import.meta.env.VITE_GITHUB_URL || 'https://github.com/Danish-git123',
+      githubLink: import.meta.env.VITE_FACT_CHECKER_GITHUB_URL || 'https://github.com/Danish-git123/PROJECT-IV',
       demoLink: import.meta.env.VITE_FACT_CHECKER_DEMO_URL || 'https://drive.google.com/drive/folders/1Vhcf_nMASMSWnXK8CJbgliYNCcLxYHsG?usp=drive_link',
       mockupType: 'factcheck'
     },
